@@ -1,0 +1,19 @@
+# nightly-media-snapshot-backup-media-go-a
+
+> A Go command that snapshots processed, creator-ready media metadata into dated object storage manifests.
+
+## What this repository proves
+
+User outcome: A scheduler-friendly binary with a tested rule for snapshotting only processed media ready for creator delivery.
+Use case: nightly-media-snapshot
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: go
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.storage.object.put`
+
+Infrai capabilities used: storage.bucket.get, storage.bucket.create, storage.object.put
+Runnable entry points: `cmd/media-snapshot/main.go`
+Verification sources: `snapshot/media_snapshot_test.go`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt

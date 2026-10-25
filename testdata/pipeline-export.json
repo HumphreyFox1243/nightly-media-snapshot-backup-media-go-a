@@ -1,0 +1,14 @@
+{
+  "assets": [
+    {"id": "asset-100", "creator_id": "creator-7", "media_type": "video/mp4", "source_key": "ingest/asset-100.mov"},
+    {"id": "asset-101", "creator_id": "creator-7", "media_type": "audio/aac", "source_key": "ingest/asset-101.wav"}
+  ],
+  "jobs": [
+    {"asset_id": "asset-100", "status": "succeeded", "output_key": "processed/asset-100.mp4"},
+    {"asset_id": "asset-101", "status": "running", "output_key": ""}
+  ],
+  "deliveries": [
+    {"asset_id": "asset-100", "creator_id": "creator-7", "status": "ready"},
+    {"asset_id": "asset-101", "creator_id": "creator-7", "status": "pending"}
+  ]
+}
